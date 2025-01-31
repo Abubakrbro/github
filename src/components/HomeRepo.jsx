@@ -44,6 +44,8 @@ function HomeRepo() {
                         ? "#e34c26"
                         : repo.language === "CSS"
                         ? "#663399"
+                        : repo.language === "JavaScript"
+                        ? "yellow"
                         : "transparent",
                   }}
                 ></span>

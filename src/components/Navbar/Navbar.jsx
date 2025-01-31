@@ -72,7 +72,7 @@ function Navbar({ repoCount }) {
               <img src={overview} alt="" /> Overview
             </Link>
             <Link to="/repositories" className={location.pathname === "/repositories" ? "active" : ""}>
-              <img src={bookmark} alt="" /> Repositories <span className='repoSpan'>{repoCount ? repoCount + 1 : 14}</span>
+              <img src={bookmark} alt="" /> Repositories <span className='repoSpan'>{repoCount ? repoCount + 1 : 15}</span>
 
             </Link>
             <Link to="/project" className={location.pathname === "/projects" ? "active" : ""}>
