@@ -60,7 +60,7 @@ console.log(inputValue);
           style={{ color: inputValue === "" ? "#5399E7" : "black" }}
         />
 
-        <button type="submit" style={{ display: "none" }}></button> 
+        <button type="submit" style={{ display: "none" }} title="submit"></button> 
 
         <div className="owners">
           <div className="owner-search">
@@ -86,7 +86,7 @@ console.log(inputValue);
               return(
                <div className="own-cat-api" key={user.id}>
                 <div className="owmyfl">
-                <img src={user.avatar_url} alt="" />
+                <img src={user.avatar_url} alt="avatar" />
                 <h1>{user.login}</h1>
                 </div>
                 <a href="#">Jump to</a> 
@@ -95,28 +95,7 @@ console.log(inputValue);
             })}
           </div>
         </div>
-                {/* <div className="owners">
-          <h3>Owners</h3>
-          <div className="ow-cat-par">
-            {users.length > 0 ? (
-              users.map((user) => (
-                <div
-                  key={user.id}
-                  className="own-cat-flex"
-                  onClick={() => toHome(user.login)}
-                >
-                  <div className="owners-cat">
-                    <img src={user.avatar_url} alt={user.login} />
-                    <h2>{user.login}</h2>
-                  </div>
-                  <a href="#">Jump to</a>
-                </div>
-              ))
-            ) : (
-              <p>No users found</p>
-            )}
-          </div>
-        </div> */}
+               
 
 
       </form>

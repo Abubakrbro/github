@@ -14,10 +14,10 @@ const Modal = ({ toggleModals }) => {
       <div className="modals">
         <div className="modal-tops">
             <div className="mo-flex">
-            <img src={users} alt="" />
+            <img src={users} alt="users" />
             <h2>Abubakrbro</h2>
             </div>
-          <button className="close-btns" onClick={toggleModals}>
+          <button className="close-btns" onClick={toggleModals} title="close-button">
             &times;
           </button>
         </div>
@@ -26,7 +26,7 @@ const Modal = ({ toggleModals }) => {
           <div className="myproline"></div>
           <div className="modal-linker"><i className="fa-regular fa-user"></i><h2>Your profile</h2></div>
           <div className="modal-linker"><i class="fa-solid fa-book"></i><h2>Your repasitories</h2></div>
-          <div className="modal-linker"><img src={copilot} alt="" /><h2>Your copilot</h2></div>
+          <div className="modal-linker"><img src={copilot} alt="copilot" /><h2>Your copilot</h2></div>
           <div className="modal-linker"><i class="fa-regular fa-window-maximize"></i><h2>Your projects</h2></div>
           <div className="modal-linker"><i class="fa-regular fa-star"></i><h2>Your Stars</h2></div>
           <div className="modal-linker"><i class="fa-solid fa-code"></i><h2>Your gifts</h2></div>

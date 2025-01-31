@@ -52,31 +52,31 @@ function Navbar({ repoCount }) {
               </div>
             </div>
             <div className="copilot-btns">
-              <button><img src={copilot} alt="s" /></button>
-              <button><i className="fa-solid fa-sort-down"></i></button>
+              <button aria-label='copilot-button'><img src={copilot} alt="copilot-icon" /></button>
+              <button aria-label='down-button'><i className="fa-solid fa-sort-down"></i></button>
             </div>
             <div className='lines'></div>
-            <button className='btn-pls'>+ <i className="fa-solid fa-chevron-down"></i></button>
-            <button className='issue-btn'><i className="fa-regular fa-circle-dot"></i></button>
-            <button className='request-btn'><i className="fa-solid fa-code-pull-request"></i></button>
-            <button className='noti-icon'><img src={notification} alt="noti" /></button>
+            <button className='btn-pls' title='plus-button'>+ <i className="fa-solid fa-chevron-down"></i></button>
+            <button className='issue-btn' title='issues-button'><i className="fa-regular fa-circle-dot"></i></button>
+            <button className='request-btn' title='request-btn'><i className="fa-solid fa-code-pull-request"></i></button>
+            <button className='noti-icon' title='notification'><img src={notification} alt="noti" /></button>
             {isModalOpens && <ProModal toggleModals={toggleModals} />}
             <div className="profile-img" onClick={toggleModals}>
-              <img src={users} alt="" />
+              <img src={users} alt="users" />
             </div>
           </div>
         </div>
         <div className="nav-right">
           <div className="nav-links">
             <Link to="/Abubakrbro" className={location.pathname === "/Abubakrbro" ? "active" : ""}>
-              <img src={overview} alt="" /> Overview
+              <img src={overview} alt="overiwer" /> Overview
             </Link>
             <Link to="/repositories" className={location.pathname === "/repositories" ? "active" : ""}>
-              <img src={bookmark} alt="" /> Repositories <span className='repoSpan'>{repoCount ? repoCount + 1 : 15}</span>
+              <img src={bookmark} alt="bookmark" /> Repositories <span className='repoSpan'>{repoCount ? repoCount + 1 : 15}</span>
 
             </Link>
             <Link to="/project" className={location.pathname === "/projects" ? "active" : ""}>
-              <img src={proj} alt="" /> Projects
+              <img src={proj} alt="oroject" /> Projects
             </Link>
             <Link to="/packages" className={location.pathname === "/packages" ? "active" : ""}>
               <i className="fa-solid fa-cube"></i> Packages

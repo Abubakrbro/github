@@ -5,7 +5,7 @@ function Pack() {
   return (
     <div>
       <div className="packPar">
-        <img src={gitic} alt="" />
+        <img src={gitic} alt="git-icon" />
         <h1>Get started with GitHub Packages</h1>
         <p>Safely publish packages, store your packages alongside your code, and share your packages privately with your team.</p>
             <h2>Choose a registry</h2>

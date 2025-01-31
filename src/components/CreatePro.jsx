@@ -5,10 +5,10 @@ function CreatePro() {
   return (
     <div>
       <div className="CreateProPar">
-        <img src={proj} alt="" />
+        <img src={proj} alt="project" />
         <h2>Create your first GitHub project</h2>
         <h3>Projects are a customizable, flexible tool for planning and tracking your work.</h3>
-        <button>New project</button>
+        <button title='new project'>New project</button>
       </div>
     </div>
   )

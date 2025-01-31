@@ -36,7 +36,7 @@ function Following() {
                     />
                     <h1>{followedUser.login}</h1>
                   </div>
-                  <button>Unfollow</button>
+                  <button title='unfollow'>Unfollow</button>
                 </div>
               ))
             ) : (

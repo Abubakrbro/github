@@ -55,10 +55,10 @@ function MainRepo({ setRepoCount }) {
                     <p>{repo.visibility}</p>
                   </div>
                   <div className="repoBtns">
-                    <button>
+                    <button title="star-category">
                       <i className="fa-regular fa-star"></i> Star
                     </button>
-                    <button>
+                    <button className="down-category">
                       <i className="fa-solid fa-sort-down"></i>
                     </button>
                   </div>
@@ -82,7 +82,7 @@ function MainRepo({ setRepoCount }) {
                     <h2>Updated {new Date(repo.updated_at).toLocaleDateString()}</h2>
                   </div>
                   <div className="mainReImg">
-                    <img src={repoline} alt="" />
+                    <img src={repoline} alt="line" />
                   </div>
                 </div>
               </div>

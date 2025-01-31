@@ -24,9 +24,9 @@ function MainProfile() {
   return (
     <div>
       <div className="mainProWrapper">
-        <img src={myProfile.avatar_url} alt="" />
+        <img src={myProfile.avatar_url} alt="avatar" />
         <h1>{myProfile.login}</h1>
-        <button>Edit profile</button>
+        <button title='edit-profile'>Edit profile</button>
         <div className="followers">
             <i className="fa-solid fa-users"></i>
             <Link to="/followers">{myProfile.followers} follower</Link>
@@ -35,7 +35,7 @@ function MainProfile() {
         <div className="mypro-line"></div>
         <div className="organizations">
             <h2>Organizations</h2>
-            <img src={myProfile.avatar_url} alt="" />
+            <img src={myProfile.avatar_url} alt="avatar" />
         </div>
       </div>
     </div>

@@ -7,10 +7,10 @@ function Lists() {
         <div className="listHead">
           <h2>List (0)</h2>
           <div className="list-btns">
-            <button>
+            <button title="sort">
               Sort <i className="fa-solid fa-sort-down"></i>
             </button>
-            <button>Create list</button>
+            <button title="create-list">Create list</button>
           </div>
         </div>
         <div className="listPar">

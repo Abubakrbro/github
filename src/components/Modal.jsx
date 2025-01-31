@@ -20,7 +20,7 @@ const Modal = ({ toggleModal }) => {
       <div className="modal">
         <div className="modal-top">
           <i className="fa-brands fa-github" id="nav-git"></i>
-          <button className="close-btn" onClick={toggleModal}>
+          <button className="close-btn" onClick={toggleModal} title="close-btn">
             &times;
           </button>
         </div>
@@ -28,15 +28,15 @@ const Modal = ({ toggleModal }) => {
           <div className="modal-link" onClick={toHome}><img src={home} alt=""/><h2>Home</h2></div>
           <div className="modal-link"><i className="fa-regular fa-circle-dot"></i><h2>Issues</h2></div>
           <div className="modal-link"><i className="fa-solid fa-code-pull-request"></i><h2>Pull requests</h2></div>
-          <div className="modal-link"><img src={proj} alt="" /><h2>Projects</h2></div>
-          <div className="modal-link"><img src={discuss} alt="" /><h2>Discussions</h2></div>
-          <div className="modal-link"><img src={codepase} alt="" /><h2>Codespaces</h2></div>
-          <div className="modal-link"><img src={copilot} alt="" /><h2>Copilot</h2></div>
+          <div className="modal-link"><img src={proj} alt="project" /><h2>Projects</h2></div>
+          <div className="modal-link"><img src={discuss} alt="discussion" /><h2>Discussions</h2></div>
+          <div className="modal-link"><img src={codepase} alt="codepase" /><h2>Codespaces</h2></div>
+          <div className="modal-link"><img src={copilot} alt="copilot" /><h2>Copilot</h2></div>
         </div>
         <div className="modal-lines"></div>
         <div className="modal-linkse">
-            <div className="modal-link"><img src={zoom} alt="" /><h2>Explore</h2></div>
-            <div className="modal-link"><img src={prize} alt="" /><h2>Marketplace</h2></div>
+            <div className="modal-link"><img src={zoom} alt="zoom" /><h2>Explore</h2></div>
+            <div className="modal-link"><img src={prize} alt="prize" /><h2>Marketplace</h2></div>
         </div>
         <div className="modal-lines"></div>
         <div className="repastory-par">
