@@ -239,6 +239,10 @@
   height: calc(33 / 14.4 * 1vw);
 }
 
+.noti-icon img{
+  width: calc(20 / 14.4 * 1vw);
+}
+
 .noti-icon:hover {
   background-color: var(--hover-color);
 }
